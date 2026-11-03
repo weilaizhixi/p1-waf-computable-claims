@@ -1,0 +1,11 @@
+model,condition,cells,value_discrepancies,type_name_echoes,missing_field_cells,format_only_complete_answers,complete_value_and_type_consistent
+haiku,neutral,493,0,0,0,0,493
+haiku,explicit,493,0,0,0,0,493
+gpt6luna,neutral,493,4,3,1,169,316
+gpt6luna,explicit,493,3,1,1,190,298
+glm,neutral,493,2,0,0,11,480
+glm,explicit,493,0,0,0,15,478
+mimo,neutral,493,5,0,0,176,312
+mimo,explicit,493,2,0,0,176,315
+deepseek,neutral,493,0,0,0,4,489
+deepseek,explicit,493,0,0,0,6,487

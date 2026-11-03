@@ -1,0 +1,13 @@
+app,candidates,measurement_valid,benign_response_contracts,example_conformance
+dvwa,19,19,19,15
+prometheus,15,15,15,13
+webgoat,20,20,20,16
+elasticsearch,18,18,18,0
+ghost,16,16,16,10
+parse_server,20,20,20,16
+grafana,16,16,16,0
+datasette,16,16,16,13
+wordpress,20,20,20,18
+juice_shop,19,19,19,13
+jenkins_xml,18,18,18,18
+mlflow,16,16,14,9

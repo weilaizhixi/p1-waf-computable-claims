@@ -1,0 +1,23 @@
+{
+  "值与类型一致": "Value and type consistency",
+  "仅格式偏差": "Format-only deviation",
+  "值差异": "Value discrepancy",
+  "以类型名代替字段值": "Type-name substitution",
+  "缺失字段": "Missing fields",
+  "输出类型名": "Type-name substitution",
+  "回答单元数": "Number of response cells",
+  "回答单元（每点 1 个）": "Response cells (one per point)",
+  "neutral 条件": "neutral",
+  "explicit 条件": "explicit",
+  "直接  程序": "Direct  Program",
+  "应用证据包内题序": "Task order within application evidence package",
+  "直接回答正确": "Direct answer correct",
+  "直接回答错误": "Direct answer incorrect",
+  "程序执行正确": "Program execution correct",
+  "候选规则格": "Candidate-rule cells",
+  "测量有效": "Measurement valid",
+  "良性响应规约": "Benign-response contract",
+  "测试示例符合": "Example conformance",
+  "合计": "Total",
+  "规则格数": "Number of rule cells"
+}

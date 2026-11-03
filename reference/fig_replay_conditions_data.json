@@ -1,0 +1,97 @@
+{
+  "figure": "fig_replay_conditions",
+  "source": "锚点 I",
+  "apps": [
+    {
+      "app": "DVWA",
+      "candidates": 19,
+      "valid": 19,
+      "benign": 19,
+      "example": 15
+    },
+    {
+      "app": "Prometheus",
+      "candidates": 15,
+      "valid": 15,
+      "benign": 15,
+      "example": 13
+    },
+    {
+      "app": "WebGoat",
+      "candidates": 20,
+      "valid": 20,
+      "benign": 20,
+      "example": 16
+    },
+    {
+      "app": "Elasticsearch",
+      "candidates": 18,
+      "valid": 18,
+      "benign": 18,
+      "example": 0
+    },
+    {
+      "app": "Ghost",
+      "candidates": 16,
+      "valid": 16,
+      "benign": 16,
+      "example": 10
+    },
+    {
+      "app": "Parse Server",
+      "candidates": 20,
+      "valid": 20,
+      "benign": 20,
+      "example": 16
+    },
+    {
+      "app": "Grafana",
+      "candidates": 16,
+      "valid": 16,
+      "benign": 16,
+      "example": 0
+    },
+    {
+      "app": "Datasette",
+      "candidates": 16,
+      "valid": 16,
+      "benign": 16,
+      "example": 13
+    },
+    {
+      "app": "WordPress",
+      "candidates": 20,
+      "valid": 20,
+      "benign": 20,
+      "example": 18
+    },
+    {
+      "app": "Juice Shop",
+      "candidates": 19,
+      "valid": 19,
+      "benign": 19,
+      "example": 13
+    },
+    {
+      "app": "Jenkins XML",
+      "candidates": 18,
+      "valid": 18,
+      "benign": 18,
+      "example": 18
+    },
+    {
+      "app": "mlflow",
+      "candidates": 16,
+      "valid": 16,
+      "benign": 14,
+      "example": 9
+    }
+  ],
+  "total": {
+    "candidates": 213,
+    "valid": 213,
+    "benign": 211,
+    "example": 141
+  },
+  "note": "测试示例符合不是漏洞阻断率；单一测试栈；与姊妹部署研究共享"
+}

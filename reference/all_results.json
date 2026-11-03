@@ -1,0 +1,996 @@
+{
+  "source_anchor": "data/results_anchor_A-J.md",
+  "anchor_sha256": "70a6bcaea592a90890c6924a611fe0f033b542cfb59f8d1f848e670d728e3701",
+  "generated_at": "2026-11-03T10:01:53",
+  "policy": "全部数值逐字取自锚点；CSV 只用于核对；不计算置信区间、显著性、准确率或阻断率",
+  "corpus": {
+    "families": [
+      {
+        "family": "Identity comparisons",
+        "original": 63,
+        "main": 63
+      },
+      {
+        "family": "Status summaries",
+        "original": 28,
+        "main": 28
+      },
+      {
+        "family": "Counts",
+        "original": 48,
+        "main": 48
+      },
+      {
+        "family": "Timing summaries",
+        "original": 39,
+        "main": 32
+      },
+      {
+        "family": "Recorded effects",
+        "original": 7,
+        "main": 7
+      },
+      {
+        "family": "Validity records",
+        "original": 12,
+        "main": 12
+      },
+      {
+        "family": "Contrasts",
+        "original": 9,
+        "main": 9
+      },
+      {
+        "family": "Registry summaries",
+        "original": 68,
+        "main": 68
+      },
+      {
+        "family": "Traffic summaries",
+        "original": 44,
+        "main": 44
+      },
+      {
+        "family": "Cross-record comparisons",
+        "original": 14,
+        "main": 14
+      },
+      {
+        "family": "Grafana records",
+        "original": 30,
+        "main": 30
+      },
+      {
+        "family": "Coraza records",
+        "original": 34,
+        "main": 34
+      },
+      {
+        "family": "Rule-screening records",
+        "original": 62,
+        "main": 62
+      },
+      {
+        "family": "Rule-text escape cases",
+        "original": 8,
+        "main": 8
+      },
+      {
+        "family": "Census records",
+        "original": 34,
+        "main": 34
+      }
+    ],
+    "total_original": 500,
+    "total_main": 493,
+    "excluded_contradictory": "T403–T409（7 题）"
+  },
+  "uniqueness": {
+    "不同问句字符串": {
+      "value": 458,
+      "note": "500 个联合输入的问句去重"
+    },
+    "不同证据对象": {
+      "value": 413,
+      "note": "500 个证据包去重"
+    },
+    "不同字段集合": {
+      "value": 88,
+      "note": "500 个 schema 去重"
+    },
+    "联合输入（题/证据/schema）": {
+      "value": 500,
+      "note": "组件重叠，但任务对象各不相同"
+    },
+    "任务族": {
+      "value": 15,
+      "note": "见 A"
+    },
+    "来源引用": {
+      "value": 681,
+      "note": "全部解析并绑定 SHA-256"
+    },
+    "重建任务": {
+      "value": 9,
+      "note": "T023–T026、T168、T268、T478、T480、T482"
+    },
+    "主分析排除的矛盾题": {
+      "value": 7,
+      "note": "T403–T409（同时要求 median 与 sum）"
+    }
+  },
+  "partition": {
+    "total_cells": 4930,
+    "categories": {
+      "value_discrepancy": 16,
+      "type_name_echo": 4,
+      "missing_field": 2,
+      "format_only": 747,
+      "value_type_consistent": 4161
+    },
+    "discrepancy_cells": 20,
+    "discrepancy_tasks": 19,
+    "by_condition": {
+      "value_discrepancy": {
+        "N": 11,
+        "E": 5
+      },
+      "type_name_echo": {
+        "N": 3,
+        "E": 1
+      },
+      "missing_field": {
+        "N": 1,
+        "E": 1
+      }
+    },
+    "missing_field_source": "gpt6luna × T222，两个提示条件各 1 个回答单元（锚点 D）",
+    "note": "各路由的仅格式偏差与完整答案计数只在 CSV 中出现，锚点未报告，不输出（ASSETS_CONFLICTS M1）"
+  },
+  "route_counts": {
+    "rows": [
+      {
+        "label": "haiku",
+        "value_N": 0,
+        "value_E": 0,
+        "type_N": 0,
+        "type_E": 0
+      },
+      {
+        "label": "gpt6luna",
+        "value_N": 4,
+        "value_E": 3,
+        "type_N": 3,
+        "type_E": 1
+      },
+      {
+        "label": "glm",
+        "value_N": 2,
+        "value_E": 0,
+        "type_N": 0,
+        "type_E": 0
+      },
+      {
+        "label": "mimo",
+        "value_N": 5,
+        "value_E": 2,
+        "type_N": 0,
+        "type_E": 0
+      },
+      {
+        "label": "deepseek",
+        "value_N": 0,
+        "value_E": 0,
+        "type_N": 0,
+        "type_E": 0
+      }
+    ],
+    "total": {
+      "value_N": 11,
+      "value_E": 5,
+      "type_N": 3,
+      "type_E": 1
+    },
+    "note": "归档路由标签计数，是本语料上的描述，不是模型排名；条件差异不作因果解释"
+  },
+  "cases": [
+    {
+      "task": "T135",
+      "route_condition": "gpt6luna",
+      "record": "断言 vulnerable-side 已用时间和 = 131 ms",
+      "reference": "记录值求和 = 133 ms；patched-side 137 ms 正确",
+      "category": "值差异"
+    },
+    {
+      "task": "T360",
+      "route_condition": "两个路由，neutral",
+      "record": "报告规则文本长度 144 与 150 字符",
+      "reference": "146 字符；两者都正确报告规则已加载",
+      "category": "值差异"
+    },
+    {
+      "task": "T001",
+      "route_condition": "gpt6luna",
+      "record": "一个回答单元内两个布尔字段都输出字符串 `bool`",
+      "reference": "需要布尔值",
+      "category": "以类型名代替字段值（1 个回答单元，不是 2 个）"
+    },
+    {
+      "task": "T222",
+      "route_condition": "gpt6luna，两个条件",
+      "record": "缺 `n_with_nonnull_error`",
+      "reference": "字段名应为 `n_with_nonnull_error`",
+      "category": "缺失字段"
+    }
+  ],
+  "exec_control": {
+    "apps": [
+      {
+        "app": "DVWA",
+        "tasks": 8,
+        "direct": 7,
+        "program": 8,
+        "disc": 1,
+        "reverse": 0
+      },
+      {
+        "app": "Prometheus",
+        "tasks": 8,
+        "direct": 8,
+        "program": 8,
+        "disc": 0,
+        "reverse": 0
+      },
+      {
+        "app": "WebGoat",
+        "tasks": 8,
+        "direct": 7,
+        "program": 8,
+        "disc": 1,
+        "reverse": 0
+      },
+      {
+        "app": "WordPress",
+        "tasks": 8,
+        "direct": 8,
+        "program": 8,
+        "disc": 0,
+        "reverse": 0
+      },
+      {
+        "app": "Jenkins XML",
+        "tasks": 8,
+        "direct": 8,
+        "program": 8,
+        "disc": 0,
+        "reverse": 0
+      },
+      {
+        "app": "Elasticsearch",
+        "tasks": 8,
+        "direct": 8,
+        "program": 8,
+        "disc": 0,
+        "reverse": 0
+      }
+    ],
+    "total": {
+      "tasks": 48,
+      "direct": 46,
+      "program": 48,
+      "disc": 2,
+      "reverse": 0
+    },
+    "fixed_set_pp": "2/48 = 4.17",
+    "leave_one_app_out": [
+      {
+        "omitted": "DVWA",
+        "kept": 40,
+        "net_gain": 1,
+        "pp": 2.5
+      },
+      {
+        "omitted": "Prometheus",
+        "kept": 40,
+        "net_gain": 2,
+        "pp": 5.0
+      },
+      {
+        "omitted": "WebGoat",
+        "kept": 40,
+        "net_gain": 1,
+        "pp": 2.5
+      },
+      {
+        "omitted": "WordPress",
+        "kept": 40,
+        "net_gain": 2,
+        "pp": 5.0
+      },
+      {
+        "omitted": "Jenkins XML",
+        "kept": 40,
+        "net_gain": 2,
+        "pp": 5.0
+      },
+      {
+        "omitted": "Elasticsearch",
+        "kept": 40,
+        "net_gain": 2,
+        "pp": 5.0
+      }
+    ],
+    "discordant_tasks": [
+      {
+        "task": "H007（DVWA）",
+        "quantity": "重复精确 method–path 组数；这些组中的行数",
+        "direct": "9；29",
+        "reference": "8；28",
+        "program": "8；28"
+      },
+      {
+        "task": "H019（WebGoat）",
+        "quantity": "不同精确路径数；不同 method–path 对数（含查询串与转义）",
+        "direct": "6；7",
+        "reference": "7；8",
+        "program": "7；8"
+      }
+    ],
+    "changed_input_check": "48/48（事后测量工具检查）"
+  },
+  "task_exclusion_sensitivity": [
+    {
+      "analysis": "主分析",
+      "tasks_cells": "493 / 4930",
+      "disc_cells": "20（16+4）",
+      "disc_tasks": "19",
+      "type_echo": "4",
+      "note": "排除 T403–T409"
+    },
+    {
+      "analysis": "历史 500 题",
+      "tasks_cells": "500 / 5000",
+      "disc_cells": "21（+T409）",
+      "disc_tasks": "20",
+      "type_echo": "4",
+      "note": "保留历史计数，不把 T409 明确归因给模型"
+    },
+    {
+      "analysis": "排除 9 个重建任务",
+      "tasks_cells": "484 / 4840",
+      "disc_cells": "20",
+      "disc_tasks": "19",
+      "type_echo": "4",
+      "note": "事后描述；不恢复随机比较"
+    }
+  ],
+  "shared_replay": {
+    "apps": [
+      {
+        "app": "DVWA",
+        "candidates": 19,
+        "valid": 19,
+        "benign": 19,
+        "example": 15
+      },
+      {
+        "app": "Prometheus",
+        "candidates": 15,
+        "valid": 15,
+        "benign": 15,
+        "example": 13
+      },
+      {
+        "app": "WebGoat",
+        "candidates": 20,
+        "valid": 20,
+        "benign": 20,
+        "example": 16
+      },
+      {
+        "app": "Elasticsearch",
+        "candidates": 18,
+        "valid": 18,
+        "benign": 18,
+        "example": 0
+      },
+      {
+        "app": "Ghost",
+        "candidates": 16,
+        "valid": 16,
+        "benign": 16,
+        "example": 10
+      },
+      {
+        "app": "Parse Server",
+        "candidates": 20,
+        "valid": 20,
+        "benign": 20,
+        "example": 16
+      },
+      {
+        "app": "Grafana",
+        "candidates": 16,
+        "valid": 16,
+        "benign": 16,
+        "example": 0
+      },
+      {
+        "app": "Datasette",
+        "candidates": 16,
+        "valid": 16,
+        "benign": 16,
+        "example": 13
+      },
+      {
+        "app": "WordPress",
+        "candidates": 20,
+        "valid": 20,
+        "benign": 20,
+        "example": 18
+      },
+      {
+        "app": "Juice Shop",
+        "candidates": 19,
+        "valid": 19,
+        "benign": 19,
+        "example": 13
+      },
+      {
+        "app": "Jenkins XML",
+        "candidates": 18,
+        "valid": 18,
+        "benign": 18,
+        "example": 18
+      },
+      {
+        "app": "mlflow",
+        "candidates": 16,
+        "valid": 16,
+        "benign": 14,
+        "example": 9
+      }
+    ],
+    "total": {
+      "candidates": 213,
+      "valid": 213,
+      "benign": 211,
+      "example": 141
+    },
+    "note": "单一测试栈上的计数；141 是测试示例符合，不是漏洞阻断率；与姊妹部署研究共享",
+    "historical": "240 候选 / 205 联合可筛选格 / 101 旧标准通过（较弱中断标准，不作因果修复比较）"
+  },
+  "failure_chains": [
+    {
+      "problem": "DVWA 认证返回 HTTP 200 登录页",
+      "wrong_interpretation": "把从未到达受保护模块的请求当作有效攻击测试",
+      "evidence_needed": "会话 setup、安全级别读取并核对、认证模块检查"
+    },
+    {
+      "problem": "Prometheus 终止影响后续请求",
+      "wrong_interpretation": "把不活跃服务当作后续规则的保护",
+      "evidence_needed": "每种测试配置执行前重新初始化后端；把破坏性效果与测试前健康分离"
+    },
+    {
+      "problem": "冷启动或无效的测试准备状态",
+      "wrong_interpretation": "把传输/就绪失败当作规则结果",
+      "evidence_needed": "显式 readiness/测试准备结果；保留失败尝试"
+    },
+    {
+      "problem": "mlflow 复用旧对象 UUID",
+      "wrong_interpretation": "把过期对象引用当作有效合法任务",
+      "evidence_needed": "从当前测试准备响应提取标识符"
+    },
+    {
+      "problem": "审计事件仅按 URI 对齐",
+      "wrong_interpretation": "把另一个请求的拒绝归给当前请求",
+      "evidence_needed": "唯一请求标识连接到完整审计事务"
+    },
+    {
+      "problem": "保存的响应文本被裁剪或只读了一部分",
+      "wrong_interpretation": "从残缺证据声称“不存在”或“成功”",
+      "evidence_needed": "原始字节、长度、哈希、完整解码内容、完整性与错误字段"
+    },
+    {
+      "problem": "WAF 响应阶段中断发生在 HTTP 200 已发送之后",
+      "wrong_interpretation": "声称请求被阻止或保证未泄露",
+      "evidence_needed": "分开记录响应中断与观察到的泄露谓词"
+    }
+  ],
+  "checks": {
+    "n_total": 98,
+    "n_pass": 98,
+    "items": [
+      {
+        "name": "A 任务族数 = 15",
+        "pass": true,
+        "detail": "15"
+      },
+      {
+        "name": "A 原始题数列和 = Total 500",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "A 主分析题数列和 = Total 493",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "A 仅 Timing summaries 发生变化（39→32）",
+        "pass": true,
+        "detail": "['Timing summaries']"
+      },
+      {
+        "name": "C 列 value_N 之和 = Total 11",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "C 列 value_E 之和 = Total 5",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "C 列 type_N 之和 = Total 3",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "C 列 type_E 之和 = Total 1",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "D 五类之和 = 4930",
+        "pass": true,
+        "detail": "[16, 4, 2, 747, 4161, 4930]"
+      },
+      {
+        "name": "存在差异的回答单元 20 = 16 + 4",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "C 值差异 N+E = D 值差异 16",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "C 输出类型名 N+E = D 输出类型名 4",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 分区共 10 行",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV haiku/neutral 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV haiku/explicit 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV gpt6luna/neutral 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV gpt6luna/explicit 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV glm/neutral 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV glm/explicit 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV mimo/neutral 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV mimo/explicit 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV deepseek/neutral 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV deepseek/explicit 五类之和 = 493",
+        "pass": true,
+        "detail": "493"
+      },
+      {
+        "name": "CSV 列和 value_discrepancies = 锚点 16",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 列和 type_name_echoes = 锚点 4",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 列和 missing_field_cells = 锚点 2",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 列和 format_only_complete_answers = 锚点 747",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 列和 complete_value_and_type_consistent = 锚点 4161",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV haiku/neutral 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV haiku/explicit 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV gpt6luna/neutral 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV gpt6luna/explicit 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV glm/neutral 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV glm/explicit 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV mimo/neutral 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV mimo/explicit 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV deepseek/neutral 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV deepseek/explicit 值差异与输出类型名 = 锚点 C",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "缺失字段只来自 gpt6luna、两条件各 1（锚点 D：T222 两个条件）",
+        "pass": true,
+        "detail": "({'neutral': 1, 'explicit': 1}, ['gpt6luna'])"
+      },
+      {
+        "name": "F 三种口径的输出类型名均为 4",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G 列 tasks 之和 = Total 48",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G 列 direct 之和 = Total 46",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G 列 program 之和 = Total 48",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G 列 disc 之和 = Total 2",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G 列 reverse 之和 = Total 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G 合计 48/46/48/2/0",
+        "pass": true,
+        "detail": "[48, 46, 48, 2, 0]"
+      },
+      {
+        "name": "G DVWA: 程序正确 − 直接正确 = 不一致对 − 反向",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G Prometheus: 程序正确 − 直接正确 = 不一致对 − 反向",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G WebGoat: 程序正确 − 直接正确 = 不一致对 − 反向",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G WordPress: 程序正确 − 直接正确 = 不一致对 − 反向",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G Jenkins XML: 程序正确 − 直接正确 = 不一致对 − 反向",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "G Elasticsearch: 程序正确 − 直接正确 = 不一致对 − 反向",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "固定集差异 2/48 = 4.17 pp（锚点 G）",
+        "pass": true,
+        "detail": "4.17"
+      },
+      {
+        "name": "F 逐一排除 DVWA: 1/40 = 1/40，2.5 pp",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "F 逐一排除 Prometheus: 2/40 = 2/40，5.0 pp",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "F 逐一排除 WebGoat: 1/40 = 1/40，2.5 pp",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "F 逐一排除 WordPress: 2/40 = 2/40，5.0 pp",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "F 逐一排除 Jenkins XML: 2/40 = 2/40，5.0 pp",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "F 逐一排除 Elasticsearch: 2/40 = 2/40，5.0 pp",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 执行对照 dvwa = 锚点 G",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 执行对照 prometheus = 锚点 G",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 执行对照 webgoat = 锚点 G",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 执行对照 wordpress = 锚点 G",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 执行对照 jenkins_xml = 锚点 G",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 执行对照 elasticsearch = 锚点 G",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "H H007（DVWA）: 程序输出 = 参考，直接答案 ≠ 参考",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "H H019（WebGoat）: 程序输出 = 参考，直接答案 ≠ 参考",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I 应用数 = 12",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I 列 candidates 之和 = Total 213",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I 列 valid 之和 = Total 213",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I 列 benign 之和 = Total 211",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I 列 example 之和 = Total 141",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I 合计 213/213/211/141",
+        "pass": true,
+        "detail": "[213, 213, 211, 141]"
+      },
+      {
+        "name": "I DVWA: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I Prometheus: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I WebGoat: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I Elasticsearch: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I Ghost: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I Parse Server: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I Grafana: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I Datasette: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I WordPress: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I Juice Shop: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I Jenkins XML: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "I mlflow: 候选 ≥ 测量有效 ≥ 良性 ≥ 示例符合 ≥ 0",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 dvwa = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 prometheus = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 webgoat = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 elasticsearch = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 ghost = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 parse_server = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 grafana = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 datasette = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 wordpress = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 juice_shop = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 jenkins_xml = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "CSV 回放 mlflow = 锚点 I",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "J 测量流程失效类别 = 7",
+        "pass": true,
+        "detail": ""
+      }
+    ]
+  }
+}

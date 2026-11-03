@@ -1,0 +1,46 @@
+{
+  "figure": "fig_partition",
+  "source": "锚点 C、D",
+  "panel_a": [
+    {
+      "category": "值差异",
+      "cells": 16
+    },
+    {
+      "category": "以类型名代替字段值",
+      "cells": 4
+    },
+    {
+      "category": "缺失字段",
+      "cells": 2
+    },
+    {
+      "category": "仅格式偏差",
+      "cells": 747
+    },
+    {
+      "category": "值与类型一致",
+      "cells": 4161
+    }
+  ],
+  "panel_a_total": 4930,
+  "panel_b": [
+    {
+      "category": "值差异",
+      "N": 11,
+      "E": 5
+    },
+    {
+      "category": "以类型名代替字段值",
+      "N": 3,
+      "E": 1
+    },
+    {
+      "category": "缺失字段",
+      "N": 1,
+      "E": 1
+    }
+  ],
+  "panel_b_total": 22,
+  "note": "图中不得出现各路由的仅格式偏差/完整答案细分数（锚点未报告）"
+}

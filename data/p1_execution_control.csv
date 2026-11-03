@@ -1,0 +1,7 @@
+app,tasks,direct_correct,program_correct,direct_wrong_program_correct,reverse_pairs
+dvwa,8,7,8,1,0
+prometheus,8,8,8,0,0
+webgoat,8,7,8,1,0
+wordpress,8,8,8,0,0
+jenkins_xml,8,8,8,0,0
+elasticsearch,8,8,8,0,0

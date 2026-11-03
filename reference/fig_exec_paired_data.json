@@ -1,0 +1,448 @@
+{
+  "figure": "fig_exec_paired",
+  "source": "锚点 G、H",
+  "apps": [
+    {
+      "app": "DVWA",
+      "tasks": 8,
+      "direct": 7,
+      "program": 8,
+      "disc": 1,
+      "reverse": 0
+    },
+    {
+      "app": "Prometheus",
+      "tasks": 8,
+      "direct": 8,
+      "program": 8,
+      "disc": 0,
+      "reverse": 0
+    },
+    {
+      "app": "WebGoat",
+      "tasks": 8,
+      "direct": 7,
+      "program": 8,
+      "disc": 1,
+      "reverse": 0
+    },
+    {
+      "app": "WordPress",
+      "tasks": 8,
+      "direct": 8,
+      "program": 8,
+      "disc": 0,
+      "reverse": 0
+    },
+    {
+      "app": "Jenkins XML",
+      "tasks": 8,
+      "direct": 8,
+      "program": 8,
+      "disc": 0,
+      "reverse": 0
+    },
+    {
+      "app": "Elasticsearch",
+      "tasks": 8,
+      "direct": 8,
+      "program": 8,
+      "disc": 0,
+      "reverse": 0
+    }
+  ],
+  "tiles": [
+    {
+      "app": "DVWA",
+      "col": 1,
+      "task_id": "H001",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "DVWA",
+      "col": 2,
+      "task_id": "H002",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "DVWA",
+      "col": 3,
+      "task_id": "H003",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "DVWA",
+      "col": 4,
+      "task_id": "H004",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "DVWA",
+      "col": 5,
+      "task_id": "H005",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "DVWA",
+      "col": 6,
+      "task_id": "H006",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "DVWA",
+      "col": 7,
+      "task_id": "H007",
+      "direct_correct": false,
+      "program_correct": true,
+      "highlight": true
+    },
+    {
+      "app": "DVWA",
+      "col": 8,
+      "task_id": "H008",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Prometheus",
+      "col": 1,
+      "task_id": "H009",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Prometheus",
+      "col": 2,
+      "task_id": "H010",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Prometheus",
+      "col": 3,
+      "task_id": "H011",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Prometheus",
+      "col": 4,
+      "task_id": "H012",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Prometheus",
+      "col": 5,
+      "task_id": "H013",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Prometheus",
+      "col": 6,
+      "task_id": "H014",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Prometheus",
+      "col": 7,
+      "task_id": "H015",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Prometheus",
+      "col": 8,
+      "task_id": "H016",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WebGoat",
+      "col": 1,
+      "task_id": "H017",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WebGoat",
+      "col": 2,
+      "task_id": "H018",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WebGoat",
+      "col": 3,
+      "task_id": "H019",
+      "direct_correct": false,
+      "program_correct": true,
+      "highlight": true
+    },
+    {
+      "app": "WebGoat",
+      "col": 4,
+      "task_id": "H020",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WebGoat",
+      "col": 5,
+      "task_id": "H021",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WebGoat",
+      "col": 6,
+      "task_id": "H022",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WebGoat",
+      "col": 7,
+      "task_id": "H023",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WebGoat",
+      "col": 8,
+      "task_id": "H024",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WordPress",
+      "col": 1,
+      "task_id": "H025",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WordPress",
+      "col": 2,
+      "task_id": "H026",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WordPress",
+      "col": 3,
+      "task_id": "H027",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WordPress",
+      "col": 4,
+      "task_id": "H028",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WordPress",
+      "col": 5,
+      "task_id": "H029",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WordPress",
+      "col": 6,
+      "task_id": "H030",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WordPress",
+      "col": 7,
+      "task_id": "H031",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "WordPress",
+      "col": 8,
+      "task_id": "H032",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Jenkins XML",
+      "col": 1,
+      "task_id": "H033",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Jenkins XML",
+      "col": 2,
+      "task_id": "H034",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Jenkins XML",
+      "col": 3,
+      "task_id": "H035",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Jenkins XML",
+      "col": 4,
+      "task_id": "H036",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Jenkins XML",
+      "col": 5,
+      "task_id": "H037",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Jenkins XML",
+      "col": 6,
+      "task_id": "H038",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Jenkins XML",
+      "col": 7,
+      "task_id": "H039",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Jenkins XML",
+      "col": 8,
+      "task_id": "H040",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Elasticsearch",
+      "col": 1,
+      "task_id": "H041",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Elasticsearch",
+      "col": 2,
+      "task_id": "H042",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Elasticsearch",
+      "col": 3,
+      "task_id": "H043",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Elasticsearch",
+      "col": 4,
+      "task_id": "H044",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Elasticsearch",
+      "col": 5,
+      "task_id": "H045",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Elasticsearch",
+      "col": 6,
+      "task_id": "H046",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Elasticsearch",
+      "col": 7,
+      "task_id": "H047",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    },
+    {
+      "app": "Elasticsearch",
+      "col": 8,
+      "task_id": "H048",
+      "direct_correct": true,
+      "program_correct": true,
+      "highlight": false
+    }
+  ],
+  "total": {
+    "tasks": 48,
+    "direct": 46,
+    "program": 48,
+    "disc": 2,
+    "reverse": 0
+  },
+  "layout_note": "每应用 8 题、H001–H048 按表 G 的应用顺序排布（由 ID 规则推定）；锚点只给出 H007、H019 两题的直接答案不一致，其余 46 题两条件均正确由合计 46/48、48/48 推出。图中只标注 H007、H019，其余瓦片不对应具体任务类型。"
+}
